@@ -4,7 +4,14 @@ import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
+//DRY - don't repeat yourself'
+//YAGNI - you aren't going to need it '
+//KISS - keep it simple stupid
+//DEMETER - ograniczanie powiązań do "bliskich przyjaciół"
+//Brzytwa Ockhama- nie mnóżmy bytów (YAGNI).
+
 public class Grade {
+
     private UUID courseUuid;
     private GradeType gradeType;
     private BigDecimal value;
