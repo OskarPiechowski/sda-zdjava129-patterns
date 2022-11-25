@@ -3,6 +3,7 @@ package pl.sdacademy.java.patterns;
 public class StudentBuilder {
     private Person person;
     private String groupCode;
+    
 
     public StudentBuilder person(Person person) {
         this.person = person;

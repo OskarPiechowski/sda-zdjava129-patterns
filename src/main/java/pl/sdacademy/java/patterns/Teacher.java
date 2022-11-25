@@ -1,22 +1,31 @@
 package pl.sdacademy.java.patterns;
 
-import java.util.Set;
-
 class Teacher extends Employee implements HasPerson {
 
    private Person person;
-   private Set<String> subjectCodes;
+   private Subject subjectCodes;
 
-   public Teacher(int salary, int employmentDate) {
-      super(salary, employmentDate);
+   public static TeacherBuilder builder(){
+      return new TeacherBuilder();
    }
+
+   public Teacher(Person person, int salary, int employmentDate) {
+      super(person, salary, employmentDate);
+   }
+
+   public Teacher(Person person, Subject subjectCodes) {
+      super(person, subjectCodes);
+   }
+
+
 
    @Override
    public Person getPerson() {
       return person;
    }
 
-   public Set<String> getSubjectCodes() {
+   public Subject getSubjectCodes() {
       return subjectCodes;
    }
+
 }

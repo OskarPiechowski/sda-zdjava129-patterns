@@ -24,6 +24,6 @@ public class EmployeeBuilder {
     }
 
     public Employee build(){
-        return new Employee(salary, employmentDate);
+        return new Employee(person, salary, employmentDate);
     }
 }
