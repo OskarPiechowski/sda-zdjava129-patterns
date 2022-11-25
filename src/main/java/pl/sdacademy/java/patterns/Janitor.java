@@ -11,8 +11,8 @@ public class Janitor extends Employee implements HasPerson {
 
     private Map<String, String> cleaningSpaces;
 
-    public Janitor(int salary, int employmentDate) {
-        super(salary, employmentDate);
+    public Janitor(Person person, int salary, int employmentDate) {
+        super(person, salary, employmentDate);
     }
 
     @Override
